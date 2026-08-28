@@ -1,0 +1,43 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tablesContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.table {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tableTitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tableContent {
+  width: 200px;
+  border-collapse: collapse;
+}
+
+.tableRow {
+  background: white;
+  cursor: grab;
+  text-align: center;
+}
+
+.tableRow:hover {
+  background: #f0f0f0;
+}

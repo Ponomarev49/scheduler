@@ -1,0 +1,277 @@
+/* Стили для контейнера с категориями */
+.categoriesContainer {
+  padding: 10px 20px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.buttonBlue, .buttonGreen {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonBlue {
+  background-color: #007bff;
+  color: white;
+}
+
+.buttonBlue:hover {
+  background-color: #0056b3;
+}
+
+.buttonGreen {
+  background-color: #28a745;
+  color: white;
+}
+
+.buttonGreen:hover {
+  background-color: #218838;
+}
+
+.categoryTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Контейнер для таблиц (групп) внутри каждой категории */
+.tableWrapperContainer {
+  display: flex;
+  justify-content: space-between; /* Располагаем таблицы с одинаковыми промежутками */
+  flex-wrap: wrap; /* Позволяет таблицам переноситься на новые строки, если места не хватает */
+  gap: 2rem; /* Увеличиваем промежуток между группами до 2rem */
+  margin-top: 1rem;
+}
+
+/* Каждый элемент группы (таблица) */
+.tableWrapper {
+  margin-bottom: 50px;
+  flex: 1 1 22%; /* Каждая группа теперь будет занимать около 22% ширины, чтобы 4 группы вмещались в строку */
+  min-width: 250px; /* Минимальная ширина для каждой группы */
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.tableHeader {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tableTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.tableRow {
+  cursor: move; /* Указатель для перетаскивания */
+}
+
+/* Отступы для контейнера с таблицами */
+.tableContainer {
+  margin-top: 2rem;
+}
+
+/* Обновляем стиль для заголовка таблицы, чтобы кнопка была на одной строке с названием */
+.tableHeader {
+  display: flex;
+  justify-content: space-between; /* Располагаем элементы по краям */
+  align-items: center; /* Выравниваем по вертикали */
+  margin-bottom: 10px;
+}
+
+/* Название таблицы */
+.tableTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* Кнопка для удаления таблицы */
+.buttonDelete {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonDelete:hover {
+  background-color: #c82333;
+}
+
+
+.buttonSave {
+  margin: 40px 10px;
+  background-color: #4CAF50; /* Зеленый цвет для кнопки */
+  color: white; /* Текст белого цвета */
+  padding: 12px 24px; /* Отступы для размера кнопки */
+  font-size: 16px; /* Размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  border-radius: 8px; /* Скругленные углы */
+  border: none; /* Без границы */
+  cursor: pointer; /* Курсор в виде руки */
+  transition: all 0.3s ease; /* Плавный переход для анимации */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объема */
+}
+
+.buttonSave:hover {
+  background-color: #45a049; /* Более темный зеленый при наведении */
+  transform: translateY(-2px); /* Легкий подъем кнопки при наведении */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+}
+
+.buttonSave:active {
+  background-color: #388e3c; /* Еще более темный зеленый при нажатии */
+  transform: translateY(1px); /* Эффект нажатия (сдвиг кнопки вниз) */
+}
+
+/* Основные стили */
+.text-xl {
+  font-size: 1.25rem; /* эквивалент 20px */
+}
+
+.font-semibold {
+  font-weight: 600; /* Полужирный текст */
+}
+
+.space-y-4 {
+  margin-bottom: 1rem; /* Пространство между элементами */
+}
+
+.flex {
+  display: flex;
+}
+
+.space-x-4 {
+  margin-right: 1rem; /* Пространство между элементами по горизонтали */
+}
+
+/* Стили для блока с доступностью зала */
+.hallAvailabilityRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border: 1px solid #ddd; /* Легкая рамка */
+  border-radius: 8px; /* Скругленные углы */
+  background-color: #f9fafb; /* Легкий фон */
+}
+
+.hallAvailabilityRow:hover {
+  background-color: #f1f5f9; /* Подсветка при наведении */
+}
+
+.font-medium {
+  font-weight: 500; /* Средний вес шрифта */
+}
+
+/* Стили для инпутов времени */
+.timeInput {
+  width: 120px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.timeInput:focus {
+  outline: none;
+  border-color: #5e60ce; /* Цвет при фокусе */
+}
+
+input::placeholder {
+  color: #9ca3af; /* Цвет текста подсказки */
+}
+
+/* Отступы и стили для заголовка */
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.space-y-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Общие стили для кнопок */
+.buttonBlue, .buttonGreen, .buttonSave {
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.buttonBlue {
+  background-color: #007bff;
+  color: white;
+}
+
+.buttonGreen {
+  background-color: #28a745;
+  color: white;
+}
+
+.buttonSave {
+  background-color: #007bff;
+  color: white;
+  margin-top: 16px;
+}
+
+.buttonBlue:hover, .buttonGreen:hover, .buttonSave:hover {
+  background-color: #0056b3;
+}
+
+/* Для чекбоксов */
+.checkboxInput {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;  /* Добавьте этот стиль, чтобы указать на кликабельность */
+}
+
+.checkboxInput:checked {
+  background-color: #007bff;
+  border-color: #0056b3;
+}
+
+/* Стили для текста этапов */
+.stageText {
+  font-size: 0.9rem;
+  color: #444;
+  cursor: pointer;  /* Чтобы текст тоже был кликабельным */
+}
+

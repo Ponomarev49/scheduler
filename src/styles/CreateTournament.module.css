@@ -1,0 +1,131 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.pageTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formLabel {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ageCategoryContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.selectInput {
+  width: 120px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dash {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.addCategoryButton {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addCategoryButton:hover {
+  background-color: #0056b3;
+}
+
+.categoryList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categoryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+.removeCategoryButton {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.removeCategoryButton:hover {
+  background-color: #a71d2a;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submitButton:hover:enabled {
+  background-color: #218838;
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}

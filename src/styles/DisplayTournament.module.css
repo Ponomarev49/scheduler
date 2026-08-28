@@ -1,0 +1,130 @@
+.container {
+  padding: 24px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.tableContainer {
+  width: auto;
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+
+.dayHeader {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #4a5568;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.table {
+  width: auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  white-space: nowrap; /* Запрет переноса текста */
+}
+
+th {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+.tableHeader {
+  background-color: #e2e8f0;
+}
+
+.tableCell {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.teamCell {
+  text-align: left;
+}
+
+.tableRow {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.greenRow { background-color: lightgreen; }
+.blueRow { background-color: lightblue; }
+.purpleRow { background-color: plum; }
+.pinkRow { background-color: pink; }
+.defaultRow { background-color: white; }
+
+
+.tableRow:hover {
+  opacity: 0.85;
+}
+
+
+
+.rowHover:hover {
+  opacity: 0.75;
+}
+
+.container {
+  padding: 24px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dayBlock {
+  margin-bottom: 32px;
+}
+
+.dayTitle {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #4b5563; /* Темно-серый фон */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #9ca3af; /* Серый цвет границ */
+}
+
+.th, .td {
+  border: 1px solid #9ca3af;
+  padding: 10px;
+  text-align: center;
+}
+
+.th {
+  background-color: #e5e7eb; /* Светло-серый фон */
+  font-weight: bold;
+}
+
+.tableRow:hover {
+  opacity: 0.85;
+}
